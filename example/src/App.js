@@ -1,10 +1,19 @@
 import React from 'react'
 
-import { ExampleComponent } from 'rabbitui'
+
 import 'rabbitui/dist/index.css'
+import Button from './Button'
+import Count from './Count'
+import Header from './Headr'
 
 const App = () => {
-  return <ExampleComponent text="Create React Library Example 😄" />
-}
-
+  return (
+    <>
+  
+    <Button text="click" onClick={()=>alert("deneme çalışması")}/>
+    <Header text="canım sıkılıyır"/>
+    <Count/>
+    </>
+  )
+  }
 export default App
